@@ -20,8 +20,8 @@ activate
 ```
 <br>
 <p>Instalação do framework utilizado para a construção da API:</p>
-
 <br>
+
 ```powershell
 pip install Flask
 ```
