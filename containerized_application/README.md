@@ -68,6 +68,8 @@ RUN pip3 install -r requirements.txt
 COPY . .
 
 CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]
+
+EXPOSE 8080
 ```
 <br>
 
@@ -75,9 +77,9 @@ CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]
 <br>
 
 ```	powershell
-docker build -t <image_name> .
-docker tag <image_name> <repository_name>/<image_name>
-docker push <repository_name>/<image_name>
+docker build -t imagem_curriculo .
+docker tag imagem_curriculo amandafontes/imagem_curriculo
+docker push amandafontes/imagem_curriculo
 ```
 <br>
 
@@ -85,4 +87,14 @@ docker push <repository_name>/<image_name>
 
 <p align="center"><img src=".\images\dockerhub.png" width="60%"></img></p><br>
 
-<p>Por meio <a href="https://hub.docker.com/repository/docker/amandafontes/curriculum_application/general">deste link</a>, é possível acessar o repositório que criei para a atividade.</p><br>
+<p>Para rodar a imagem containerizada, basta executar o comando abaixo:</p>
+
+```powershell
+docker run -p 8080:80 amandafontes/imagem_curriculo:latest
+```	
+
+<p>Uma opção alternativa para executar o container é utilizando o Docker Desktop, em que é possível configurar, manualmente, a porta a ser utilizada. Se a execução for bem-sucedida, o usuário deverá visualizar as seguintes circunstâncias:</p>
+
+<p align="center"><img src=".\images\execucao_container.png" width="60%"></img></p><br>
+
+<p>Por meio <a href="https://hub.docker.com/repository/docker/amandafontes/imagem_curriculo/general">deste link</a>, é possível acessar o repositório que criei para a atividade.</p><br>

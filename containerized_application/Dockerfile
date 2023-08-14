@@ -11,4 +11,7 @@ COPY . .
 
 CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]
 
+ENV FLASK_APP=main.py
+EXPOSE 8080
+
 # Referência: https://www.freecodecamp.org/news/how-to-dockerize-a-flask-app/
