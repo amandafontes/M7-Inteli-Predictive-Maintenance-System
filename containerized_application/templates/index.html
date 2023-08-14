@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(255, 250, 250);
+            font-family: 'Inter';
+        }
+
+        .container {
+            margin-top: 10%;
+            margin-bottom: 10%;
+            margin-left: 25%;
+            margin-right: 25%;
+            background-color: rgb(255, 255, 255);
+            padding-top: 3%;
+            padding-left: 3%;
+            padding-right: 3%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .image{
+            display: block;
+            text-align: center;
+        }
+
+        .foto {
+            width: 200px;
+            height: 300px;
+            text-align: center;
+            object-fit: contain;
+            max-width: 100%;
+        }
+
+        .introduction {
+            text-align: center;
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 10%;
+        }
+
+        .description {
+            text-align: left;
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 10%;
+        }
+
+        .experiences {
+            text-align: left;
+            font-size: 13px;
+            margin-bottom: 10%;
+        }
+
+        .jobs {
+            text-align: left;
+            font-size: 13px;
+            margin-bottom: 10%;
+        }
+
+        .background {
+            text-align: left;
+            font-size: 13px;
+            margin-bottom: 10%;
+        }
+
+        .first_block {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+        }
+
+        .second_block {
+            display: grid;
+            margin-bottom: 5%;
+        }
+
+        .third_block {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+            margin-bottom: 10%;
+        }
+
+        #title {
+            font-size: 14px;
+            font-weight: 500;
+        }
+    </style>
+    <title>EC-M7-S1 | Atividade 1</title>
+</head>
+<body>
+    <div class="container">
+        <div class="introduction">
+            <h2>Olá, eu sou a Amanda!</h2>
+        </div>
+        <div class="first_block">
+            <div class="image">
+                <img class="foto" src="../static/image.jpg">
+            </div>
+            <div class="description">
+                <p>
+                    Atualmente, sou aluna do curso de Engenharia de Computação no Instituto de Tecnologia e Liderança, cursando o segundo ano de graduação. Na instituição, atuo como aluna de Iniciação Científica na área de educação: estudo Project-Based Learning enquanto metodologia ativa de aprendizagem na área da computação. Até o momento, tive a oportunidade de realizar três estágios de férias nas áreas de Data Analytics, Data Science e Development — e espero poder, em breve, explorar outras áreas da tecnologia que possibilitem o meu desenvolvimento acadêmico e profissional.
+                </p>
+            </div>
+        </div>
+        <div class="second_block">
+            <div class="experiences">
+                <h3>Projetos Acadêmicos</h3>
+                <p id="title">Automação Industrial | Jan. 2023 - Abr. 2023
+                </p>
+                    <li>Solução para o Instituto de Pesquisas Tecnológicas
+                    </li>
+                    <li>Automatização de ensaios de separação magnética
+                    </li>
+                <p id="title">Desenvolvimento IoT | Out. 2022 - Dez. 2022
+                </p>
+                    <li>Solução IoT para o Instituto de Pesquisas Tecnológicas
+                    </li>
+                    <li>Monitoramento de ativos por localização indoor
+                    </li>
+                <p id="title">Inteligência Artificial | Ago. 2022 - Out. 2022
+                </p>
+                    <li>Desenvolvimento de modelo de predição para Banco PAN
+                    </li>
+                    <li>Aprimorar sistema de atendimento ao cliente
+                    </li>
+                <p id="title">Desenvolvimento Web | Abr. 2022 - Jun. 2022
+                </p>
+                    <li>Desenvolvimento de aplicação web para Brazilians in Tech
+                    </li>
+                    <li>Inserção de mulheres no mercado tech
+                    </li>
+                <p id="title">Desenvolvimento de Jogos | Jan. 2022 - Abr. 2022
+                </p>
+                    <li>Desenvolvimento de solução gamificada para a AMBEV
+                    </li>
+                    <li>Ensino de Diversidade & Inclusão
+                    </li>
+            </div>
+            <div class="third_block">
+                <div class="jobs">
+                    <h3>Experiência Profissional</h3>
+                    <p>
+                        Summer Internship em IT Digital<br>
+                        BTG Pactual<br>
+                        São Paulo | Jul. 2022
+                    </p>
+                    <p>
+                        Summer Internship em Data Science<br>
+                        Revista Exame<br>
+                        São Paulo | Jan. 2023
+                    </p>
+                    <p>
+                        Summer Internship em Data Analytics<br>
+                        BTG Pactual<br>
+                        São Paulo | Jul. 2022
+                    </p>
+                </div>
+                <div class="background">
+                    <h3>Formação Acadêmica</h3>
+                    <p>
+                        Graduação em Engenharia da Computação<br>
+                        Instituto de Tecnologia e Liderança (Inteli)<br>
+                        São Paulo | 2022 - 2025
+                    </p>
+                    <p>
+                        Ensino Médio<br>
+                        Colégio Embraer Juarez Wanderley<br>
+                        São José dos Campos | 2019 - 2021
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
