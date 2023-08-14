@@ -35,7 +35,7 @@ pip freeze > requirements.txt
 ```
 <br>
 
-<p>Posteriormente, foi criada uma API simples utilizando Flask, um framework da linguagem Python. A rota criada chama a função <code>display_curriculum()</code>, responsável por retornar <index.html> — o arquivo em que foi construída a página estática referente ao currículo profissional. Abaixo, encontra-se o código da API.</p>
+<p>Posteriormente, foi criada uma API simples utilizando Flask, um framework da linguagem Python. A rota criada chama a função <code>display_curriculum()</code>, responsável por retornar <code>index.html</code> — o arquivo em que foi construída a página estática referente ao currículo profissional. Abaixo, encontra-se o código da API.</p>
 <br>
 
 ```python
@@ -86,18 +86,3 @@ docker push <repository_name>/<image_name>
 <p align="center"><img src=".\images\dockerhub.png" width="60%"></img></p><br>
 
 <p>Por meio <a href="https://hub.docker.com/repository/docker/amandafontes/curriculum_application/general">deste link</a>, é possível acessar o repositório que criei para a atividade.</p><br>
-
-<h4>Estrutura de pastas</h4>
-
-:file_folder: &nbsp; containerized_application<br>
-&nbsp; :file_folder: &nbsp; conteiner_environment<br>
-&nbsp; :file_folder: &nbsp; images<br>
-&nbsp; &nbsp; &nbsp; :file_folder: &nbsp; dockerhub.png<br>
-&nbsp; :file_folder: &nbsp; static<br>
-&nbsp; &nbsp; &nbsp; :file_folder: &nbsp; image.png<br>
-&nbsp; &nbsp; &nbsp; &nbsp; templates<br>
-&nbsp; &nbsp; &nbsp; :file_folder: &nbsp; index.html<br>
-&nbsp; &nbsp; &nbsp; &nbsp; Dockerfile<br>
-&nbsp; &nbsp; &nbsp; &nbsp; main.py<br>
-&nbsp; &nbsp; &nbsp; &nbsp; README.md<br>
-&nbsp; &nbsp; &nbsp; &nbsp; requirements.txt<br>
