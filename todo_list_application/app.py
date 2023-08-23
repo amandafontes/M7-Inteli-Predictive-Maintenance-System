@@ -13,12 +13,31 @@ class Todo(db.Model):
     title = db.Column(db.String)
     complete = db.Column(db.Boolean)
 
-@app.route('/')
-def index():
+class User(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    email = db.Column(db.String)
+    password = db.Column(db.String)
+
+@app.route('/', methods=["GET", "POST"])
+def login():
+
+    if request.method == "POST":
+        # Realiza o login do usuário
+        email = request.form['email']
+        password = request.form['password']
+
+        if email == 'admin' and password == 'admin':
+            return redirect(url_for('todo'))
+
+    return render_template('login.html')
+
+@app.route('/todo')
+def todo():
     # Mostra todos os itens
     todo_list = Todo.query.all()
     print(todo_list)
-    return render_template('index.html', todo_list=todo_list)
+    return render_template('todo.html', todo_list=todo_list)
+
 
 @app.route('/add', methods=["POST"])
 def add():
@@ -27,7 +46,7 @@ def add():
     new_todo = Todo(title=title, complete=False)
     db.session.add(new_todo)
     db.session.commit()
-    return redirect(url_for('index'))
+    return redirect(url_for('todo'))
 
 @app.route('/update/<int:todo_id>')
 def update(todo_id):
@@ -35,7 +54,7 @@ def update(todo_id):
     todo = Todo.query.filter_by(id=todo_id).first()
     todo.complete = not todo.complete
     db.session.commit()
-    return redirect(url_for('index'))
+    return redirect(url_for('todo'))
 
 @app.route('/delete/<int:todo_id>')
 def delete(todo_id):
@@ -43,7 +62,7 @@ def delete(todo_id):
     todo = Todo.query.filter_by(id=todo_id).first()
     db.session.delete(todo)
     db.session.commit()
-    return redirect(url_for('index'))
+    return redirect(url_for('todo'))
 
 if __name__ == "__main__":
 
