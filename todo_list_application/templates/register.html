@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.js"></script>
+</head>
+<body>
+    <div class="ui container" style="margin-top: 50px;">
+        <h1 class="ui center aligned header">
+            Register
+        </h1>
+
+        <form class="ui form" action="/add_user" method="POST"> 
+            <div class="field">
+                <input style="margin-top: 11px; margin-bottom: 11px;" type="text" name="email" placeholder="Digite seu e-mail">
+                <br>
+                <input style="margin-top: 11px; margin-bottom: 11px;" type="text" name="password" placeholder="Digite sua senha">
+                <br>
+                <button style="margin-top: 20px;" class="ui blue button" type="submit">Entrar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
