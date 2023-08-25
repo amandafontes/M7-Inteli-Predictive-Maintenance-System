@@ -7,6 +7,14 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.js"></script>
+
+    <style>
+        .inline-form {
+            display: inline-block;
+            margin-right: 10px;
+        }
+    </style>
+    
 </head>
 <body>
     <div class="ui container" style="margin-top: 50px;">
@@ -33,8 +41,16 @@
                 <span class="ui green label">Complete</span>
             {% endif %}
 
-            <a style="margin-left: 8px; margin-right: 5px;" class="ui blue button" href="/update/{{ todo.id }}">Update</a>
-            <a style="margin-left: 5px; margin-right: 5px;" class="ui red button" href="/delete/{{ todo.id }}">Delete</a>
+            <!-- <a style="margin-left: 8px; margin-right: 5px;" class="ui blue button" href="/update/{{ todo.id }}">Update</a>
+            <a style="margin-left: 5px; margin-right: 5px;" class="ui red button" href="/delete/{{ todo.id }}">Delete</a> -->
+
+            <form class="inline-form" action="/update/{{ todo.id }}" method="post">
+                <button style="margin-left: 8px; margin-right: 5px;" class="ui blue button" type="submit">Update</button>
+            </form>
+            
+            <form class="inline-form" action="/delete/{{ todo.id }}" method="post">
+                <button style="margin-left: 5px; margin-right: 5px;" class="ui red button" type="submit">Delete</button>
+            </form>
 
         {% endfor %}
         </div>
