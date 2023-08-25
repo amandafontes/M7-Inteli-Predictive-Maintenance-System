@@ -4,10 +4,10 @@
 
 <h3>Organização de diretórios</h3><br>
 
-<li><a href="https://github.com/amandafontes/M7-Inteli-Predictive-Maintenance-System/tree/main/containerized_application"><code>containerized_application</code></a>&nbsp;&nbsp;&nbsp;Atividade para o aprendizado de containerização<br>
+<li><a href="https://github.com/amandafontes/M7-Inteli-Predictive-Maintenance-System/tree/main/containerized_application"><code>containerized_application</code></a>&nbsp;&nbsp;&nbsp;API para currículo containerizado<br>
   <p><b>Descrição:</b> construção da imagem de uma API simples utilizando Docker, publicação da imagem no DockerHub e execução do container.</p>
 <br>
 
-<li><a href="https://github.com/amandafontes/M7-Inteli-Predictive-Maintenance-System/tree/main/todo_list_application"><code>todo_list_application</code></a>&nbsp;&nbsp;&nbsp;To-Do List com proteção de login e containerização<br>
-  <p><b>Descrição:</b> construção de uma aplicação do tipo To-Do List com mecanismo de autenticação de login e divisão em containers.</p>
+<li><a href="https://github.com/amandafontes/M7-Inteli-Predictive-Maintenance-System/tree/main/todo_list_application"><code>todo_list_application</code></a>&nbsp;&nbsp;&nbsp;To-do List com autenticação de login e containerização<br>
+  <p><b>Descrição:</b> construção de uma aplicação do tipo To-do List com mecanismo de proteção de rotas e divisão em containers.</p>
 <br>
