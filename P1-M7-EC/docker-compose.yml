@@ -1,0 +1,17 @@
+version: '1.0'
+services:
+  api:
+    image: api-image
+    restart: always
+    ports:
+      - "8000:80"
+    depends_on:
+      - db
+    container_name: api-container
+
+  db:
+    image: database-image
+    restart: always
+    ports:
+      - "5432:5432"
+    container_name: database-container
