@@ -97,4 +97,4 @@ docker run -p 8080:80 amandafontes/imagem_curriculo:latest
 
 <p align="center"><img src=".\images\execucao_container.png" width="60%"></img></p><br>
 
-<p>Por meio <a href="https://hub.docker.com/repository/docker/amandafontes/imagem_curriculo/general">deste link</a>, é possível acessar o repositório que criei para a atividade.</p><br>
+<p>Por meio <a href="https://hub.docker.com/repository/docker/amandafontes/imagem_curriculo/general">deste link</a>, é possível acessar o repositório que criei para a atividade no Docker Hub.</p><br>
