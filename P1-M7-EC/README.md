@@ -9,3 +9,5 @@
 <p>O arquivo <code>docker-compose.yml</code> se faz necessário, por fim, para que a interdependência entre os containers seja concretizada, de modo que não seja preciso lançar um container por vez.</p>
 
 <p>Para a implementação dos procedimentos descritos acima, foi necessária a construção de cada uma das imagens (Dockerfiles). Posteriormente, foi construído o arquivo docker-compose, o qual descreve o nome da imagem destinada a seu respectivo container, a porta utilizada por cada componente, a versão da aplicação e demais configurações. Para executar a aplicação, por fim, foi necessário executar o comando <code>docker-compose up</code>.</p>
+
+<p>Ao final, teremos uma aplicação composta por dois containers: <code>api-container</code> e <code>database-container</code>.</p>
