@@ -5,7 +5,7 @@
 <h3>Organização de diretórios</h3><br>
 
 <li><a href="https://github.com/amandafontes/M7-Inteli-Predictive-Maintenance-System/tree/main/P1-M7-EC"><code>P1-M7-EC</code></a>&nbsp;&nbsp;&nbsp;Atividade prática da primeira prova do módulo.<br>
-  <p><b>Descrição:</b> a definir.</p>
+  <p><b>Descrição:</b> entrega da atividade prática da primeira prova do módulo, referente a containerização de componentes de uma aplicação.</p>
 <br>
 
 <li><a href="https://github.com/amandafontes/M7-Inteli-Predictive-Maintenance-System/tree/main/assessment_studies"><code>assessment_studies</code></a>&nbsp;&nbsp;&nbsp;Estudos para as provas do módulo<br>
