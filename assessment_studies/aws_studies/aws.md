@@ -56,3 +56,19 @@ Abaixo, encontram-se instruções relacionadas às etapas necessárias para cons
 9. Estabelecer as configurações de segurança para permitir que a API acesse o banco de dados
 10. Testar a aplicação por meio do front-end, que pode ser acessado pelo endereço IP
 11. Certificar a conexão entre API e banco de dados (verificar se é possível alimentar a tabela)
+
+<h3>Para executar a aplicação</h3>
+
+Uma vez que o console da AWS é aberto, ao conectarmos a instância do front-end, podemos executá-la utilizando os comandos abaixo.
+
+```powershell
+sudo apt update
+sudo apt upgrade
+sudo apt install python3 python3-pip -y
+git clone https://github.com/amandafontes/M7-Inteli-Predictive-Maintenance-System.git
+cd M7-Inteli-Predictive-Maintenance-System/P2-M7-EC/src
+python3 -m pip install -r requirements.txt
+sudo iptables -t nat -I PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8000
+sudo iptables -I INPUT -p tcp --dport 8000 -j ACCEPT
+python3 -m uvicorn main:app --host 0.0.0.0 --port 8000
+```
