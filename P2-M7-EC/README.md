@@ -42,16 +42,16 @@ As duas instâncias criadas no EC2 — tanto para o back-end quanto para o front
 
 A terceira instância solicitada refere-se ao banco de dados. Para a criação da instância, foi utilizado o RDS nas seguintes configurações:
 
-<li>PostgreSQL: opção de engine selecionada
-<li>Free tier: template escolhido
+<li>Engine: PostgreSQL
+<li>Template: Free Tier
 <li>DB instance identifier: nome para identificar a instância criada
 <li>Master username: nome escolhido para o banco de dados
-<li>Auto generate a password
+<li>Master keys: Auto generate a password
 <li>Instance configuration: db.t3.micro
-<li>Storage: default values
-<li>Connectivity: será conectado à instância EC2 do back-end, posteriormente
+<li>Storage: default
+<li>Connectivity: será conectado à instância EC2 do back-end
 <li>Default VPC
-<li>Public access: sim
+<li>Public access: yes
 <li>Database port: 5432
 <li>Password authentication
 
@@ -61,7 +61,7 @@ Os detalhes de conexão são exibidos abaixo.
 
 Embora a tabela do banco de dados ainda não houvesse sido criada, a conexão com o banco de dados foi testada utilizando o DBeaver, como é possível visualizar na imagem abaixo.
 
-<p align="center"><img src="./images/connection_test_dbeaver.png" width="60%"></img></p><br>
+<p align="center"><img src="./images/connection_test_dbeaver.png" width="50%"></img></p><br>
 
 **Conexão entre banco de dados e back-end**
 
@@ -74,3 +74,9 @@ O próximo passo foi estabelecer a conexão entre a instância do banco de dados
 **Conexão entre back-end e front-end**
 
 Prosseguindo com as etapas envolvidas na implementação, o próximo passo é estabelecer conexão entre o front-end e o back-end, uma vez que a interface desenvolvida consome a API e alimenta o banco de dados.
+
+Não consegui estabelecer essa conexão para a conclusão da atividade. Além disso, tive problemas para criar a tabela do banco de dados. O motivo foram os erros retornados ao tentar executar o script <code>criar_banco.py</code>.
+
+Contudo, caso a finalização das etapas descritas fosse bem-sucedida, seria necessário apenas executar o front-end da aplicação por meio de um servidor web Apache. Ao acessar a aplicação, por fim, poderíamos testar o funcionamento das rotas do back-end por meio do envio de requisições com a finalidade de alimentar o banco de dados e demonstrar que o front-end está consumindo a API criada.
+
+Após a concretização das etapas que consegui realizar, todas as instâncias foram devidamente interrompidas.
