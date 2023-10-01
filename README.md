@@ -8,6 +8,10 @@
   <p><b>Descrição:</b> entrega da atividade prática da primeira prova do módulo, referente a containerização de componentes de uma aplicação.</p>
 <br>
 
+<li><a href="https://github.com/amandafontes/M7-Inteli-Predictive-Maintenance-System/tree/main/P2-M7-EC"><code>P2-M7-EC</code></a>&nbsp;&nbsp;&nbsp;Atividade prática da segunda prova do módulo.<br>
+  <p><b>Descrição:</b> entrega da atividade prática da primeira prova do módulo, referente ao deploy de uma aplicação web na AWS.</p>
+<br>
+
 <li><a href="https://github.com/amandafontes/M7-Inteli-Predictive-Maintenance-System/tree/main/assessment_studies"><code>assessment_studies</code></a>&nbsp;&nbsp;&nbsp;Estudos para as provas do módulo<br>
   <p><b>Descrição:</b> diretório destinado ao armazenamento de materiais relevantes para o processo de aprendizagem relacionado às provas do módulo.</p>
 <br>
