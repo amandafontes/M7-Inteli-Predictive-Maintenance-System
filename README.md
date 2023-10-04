@@ -23,3 +23,11 @@
 <li><a href="https://github.com/amandafontes/M7-Inteli-Predictive-Maintenance-System/tree/main/todo_list_application"><code>todo_list_application</code></a>&nbsp;&nbsp;&nbsp;To-do list com autenticação de login e containerização<br>
   <p><b>Descrição:</b> construção de uma aplicação do tipo to-do list com mecanismo de proteção de rotas e divisão em containers.</p>
 <br>
+
+<li><a href="https://github.com/amandafontes/M7-Inteli-Predictive-Maintenance-System/tree/main/dashboard_application"><code>dashboard_application</code></a>&nbsp;&nbsp;&nbsp;Aplicação web em nuvem para visualização de dados<br>
+  <p><b>Descrição:</b> construção de aplicação web, hospedada nos serviços AWS, com dashboard para interação com modelo preditivo.</p>
+<br>
+
+<li><a href="https://github.com/amandafontes/M7-Inteli-Predictive-Maintenance-System/tree/main/article_review"><code>article_review</code></a>&nbsp;&nbsp;&nbsp;Resenha de artigo<br>
+  <p><b>Descrição:</b> resenha de estudo sobre estratégias de Machine Learning aplicadas a sistemas de Internet of Things (IoT).</p>
+<br>
