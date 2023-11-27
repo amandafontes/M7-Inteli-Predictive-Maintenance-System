@@ -31,3 +31,5 @@
 <li><a href="https://github.com/amandafontes/M7-Inteli-Predictive-Maintenance-System/tree/main/article_review"><code>article_review</code></a>&nbsp;&nbsp;&nbsp;Resenha de artigo<br>
   <p><b>Descrição:</b> resenha de estudo sobre estratégias de Machine Learning aplicadas a sistemas de Internet of Things (IoT).</p>
 <br>
+
+**Parceiro de projeto:** Azul Linhas Aéreas
